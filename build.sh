@@ -8,6 +8,4 @@
  docker images
 
 
-#stopping the already running container:
- docker stop capstoneimage
- docker rm capstoneimage
+
