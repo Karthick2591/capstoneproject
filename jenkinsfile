@@ -5,8 +5,8 @@ pipeline {
     stages {
         stage('Login into DockerHub') {
             steps {
-                docker login --username=$docker_username --password=$docker_password
-                echo $docker_password | docker login -u $docker_username --password-stdin
+                docker login --username=$DOCKER_USERNAME --password=$DOCKER_PASSWORD
+                echo $DOCKER_PASSWORD | docker login -u $DOCKER_USERNAME --password-stdin
                 }
             }
         }
